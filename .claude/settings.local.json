@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -i '' \"s|import PropertyDetailPage from \"\"./pages/PropertyDetailPage\"\";|import PropertyDetailPage from \"\"./pages/PropertyDetailPage\"\";\\\\nimport ListPropertyPage from \"\"./pages/ListPropertyPage\"\";|\" App.js)",
+      "Bash(sed -i '' \"s|<Route path=\"\"/properties/:id\"\" element={<PropertyDetailPage />} />|<Route path=\"\"/properties/:id\"\" element={<PropertyDetailPage />} />\\\\n            <Route path=\"\"/list-property\"\" element={<ListPropertyPage />} />|\" App.js)",
+      "Bash(python3 -c \":*)",
+      "Bash(du -sh ~/Library/*/)",
+      "Bash(du -sh /Users/mhmd/Library/Application Support/*/)",
+      "Bash(find '/Users/mhmd/Library/Application Support' -maxdepth 1 -type d -exec du -sh {})",
+      "Bash(2)"
+    ]
+  }
+}
